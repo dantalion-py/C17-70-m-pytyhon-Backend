@@ -9,17 +9,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 load_dotenv()
 
-django_insecure_key = "DJANGO_INSECURE_KEY"
-debug_status = "DEBUG_STATUS"
-debug_status_default = False
+# django_insecure_key = "DJANGO_INSECURE_KEY"
+# django_insecure_key = 'b(#kot%v=7*35kc4n--2dzru+!%y)@y7dhcq_puwaqm@('
+# debug_status = True
+# debug_status_default = False
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv(django_insecure_key)
+SECRET_KEY = 'b(#kot%v=7*35kc4n--2dzru+!%y)@y7dhcq_puwaqm@('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv(debug_status, debug_status_default)
-load_dotenv()
+DEBUG = True
+# load_dotenv()
 # ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'c17-70-m-python-production.up.railway.app']
 
 ALLOWED_HOSTS = ['*']
@@ -78,17 +79,17 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
-load_dotenv()
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ['RAILWAY_DATABASE_NAME'],
-        'USER': os.environ['RAILWAY_DATABASE_USERNAME'],
-        'PASSWORD': os.environ['RAILWAY_DATABASE_PASSWORD'],
-        'HOST': os.environ['RAILWAY_DATABASE_HOST'],
-        'PORT': os.environ['RAILWAY_DATABASE_PORT'],
-    }
-}
+# load_dotenv()
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': os.environ['RAILWAY_DATABASE_NAME'],
+#         'USER': os.environ['RAILWAY_DATABASE_USERNAME'],
+#         'PASSWORD': os.environ['RAILWAY_DATABASE_PASSWORD'],
+#         'HOST': os.environ['RAILWAY_DATABASE_HOST'],
+#         'PORT': os.environ['RAILWAY_DATABASE_PORT'],
+#     }
+# }
 
 
 DEFAULT_CONNECTION_NAME = "default"
