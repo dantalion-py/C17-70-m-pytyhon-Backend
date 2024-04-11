@@ -82,7 +82,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': os.getenv('RAILWAY_DATABASE_NAME'),
-        'USER': os.getenv('RAILWAY_DATABASE_USER'),
+        'USER': os.getenv('RAILWAY_DATABASE_USERNAME'),
         'PASSWORD': os.getenv('RAILWAY_DATABASE_PASSWORD'),
         'HOST': os.getenv('RAILWAY_DATABASE_HOST'),
         'PORT': os.getenv('RAILWAY_DATABASE_PORT'),
