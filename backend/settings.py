@@ -79,17 +79,17 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
-# load_dotenv()
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': os.environ['RAILWAY_DATABASE_NAME'],
-#         'USER': os.environ['RAILWAY_DATABASE_USERNAME'],
-#         'PASSWORD': os.environ['RAILWAY_DATABASE_PASSWORD'],
-#         'HOST': os.environ['RAILWAY_DATABASE_HOST'],
-#         'PORT': os.environ['RAILWAY_DATABASE_PORT'],
-#     }
-# }
+load_dotenv()
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.environ['RAILWAY_DATABASE_NAME'],
+        'USER': os.environ['RAILWAY_DATABASE_USERNAME'],
+        'PASSWORD': os.environ['RAILWAY_DATABASE_PASSWORD'],
+        'HOST': os.environ['RAILWAY_DATABASE_HOST'],
+        'PORT': os.environ['RAILWAY_DATABASE_PORT'],
+    }
+}
 
 
 DEFAULT_CONNECTION_NAME = "default"
