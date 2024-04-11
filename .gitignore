@@ -1,5 +1,4 @@
 /.venv
-/backend/.env
 backend/backend/__pycache__
 backend/accounts/__pycache__
 backend/login/__pycache__
